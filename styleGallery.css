@@ -1,243 +1,93 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth; 
-}
-
-
-nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4vw;
-    max-height: 4vw;
-    min-height: 50px;
-    background-color: #ba9573;
-    z-index: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 20%;
-    justify-content: center; /* Dodajemy centrowanie wzdłuż osi poziomej */
-    margin: 0 auto; /* Wyśrodkowanie elementów na środku poziomo */
-}
-
-.nav-container div {
-    flex-grow: 1;
-    text-align: center; 
-}
-
-.nav-container div a {
-    font-family: "Noto Serif", serif;
-    display: inline-block;
-    padding: 1.7% 2%;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1vw;
-    width: 8vw; /* Stała szerokość */
-    height: 2.4vw; /* Stała wysokość */
-    line-height: 2.4vw; /* Wyrównujemy tekst w pionie */
-    border-radius: 1vw; 
-    background-color: #ba9573;
-    transition: background-color 0.3s ease;
-    margin-left: 1.6vw;
-    margin-right: 1.6vw;
-}
- 
-.nav-container div a:hover {
-    background-color: #806348;
-    border-radius: 1vw; 
-}
-
-@media only screen and (max-width: 767px) {
-    nav {
-        height: 4vw;
-    max-height: 50px;
-    min-height: 50px;
-    }
-
-    .nav-container {
-        width: 90%;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
-    .nav-container div:not(:last-child) {
-        margin-right: 2vw;
-    }
-
-    .nav-container div a {
-        padding: 0.3vw 0,6vw;
-        width: 10vw; /* Stała szerokość */
-        line-height: 2.5vw; /* Wyrównujemy tekst w pionie */
-        min-height: 2.0vw;
-        font-size: min(1.5vw); /* Minimalna wielkość czcionki 2vw lub 16px */
-        margin-left: 1.6vw;
-        margin-right: 1.6vw;
-    }
-
-}
-
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 20px; /* Odstępy między obrazkami: 40px w pionie, 20px w poziomie */
-    padding: 20px;
-    margin-top: 75px; /* Margines na górze galerii */
-    margin-bottom: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
-    scroll-margin-top: 90px;
-}
-
-.gallery-item {
-    overflow: hidden;
-    display: flex;
-    aspect-ratio: 9 / 8; /* Ustawia proporcje obrazu, np. 16:9 */
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.gallery-item img {
-    width: 80%; /* Szerokość obrazu ustawiona na 80% szerokości kontenera */
-    height: 100%;
-    object-fit: cover; /* Upewnia się, że obrazki są przycięte, aby pasowały do kontenerów */
-    display: block;
-    border-radius: 10px; /* Dodaj zaokrąglenie rogów do kontenera */
-}
-
-@media only screen and (max-width: 767px) {
-    .gallery-container {
-        grid-template-columns: repeat(1, 1fr); /* Jedna kolumna na ekranach o szerokości mniejszej niż 767px */
-        gap: 20px; /* Odstępy między obrazkami */
-        padding: 10px; /* Zmniejszamy wewnętrzne marginesy galerii */
-        margin-left: 30px; /* Zmniejszamy marginesy na bokach galerii */
-        margin-right: 30px;
-    }
-
-    .gallery-item {
-        height: auto; /* Automatyczna wysokość kontenera na ekranach o mniejszej szerokości */
-    }
-}
-
-.brown-rectangleContact {
-    background-color: #D0C1A9;
-    color: white;
-    padding: 20px;
-    align-items: center;
-    scroll-margin-top: 70px;
-}
-
-.brown-rectangleContact h2 {
-    font-family: "Noto Serif", serif;
-    text-align: center;
-    font-size: 2.5vw;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px; /* Reduced margin-top */
-    margin-bottom: 4vh;
-}
-
-.contact-info div {
-    text-align: center;
-    justify-content: center;
-}
-
-.contact-info p {
-    font-family: "Noto Serif", serif;
-    color: white;
-    margin: 0;
-    font-size: 1.5vw;
-    font-weight: bold;
-    padding-left: 3vw; /* Added padding-top to ensure some spacing */
-    padding-right: 4vw; /* Added padding-top to ensure some spacing */
-}
-
-.contact-info .iconPh {
-    width: 3.8vw;  /* Adjusted to be responsive */
-    height: auto;
-    margin-bottom: 1.5vh;  /* Reduced margin-bottom */
-    margin-right: 1vw;
-}
-.contact-info .iconMl {
-    width: 4vw;  /* Adjusted to be responsive */
-    height: auto;
-    margin-bottom: 1.5vh;  /* Reduced margin-bottom */
-    margin-right: 0.9vw;
-}
-.contact-info .iconFb {
-    width: 4vw;  /* Adjusted to be responsive */
-    height: auto;
-    margin-bottom: 1.5vh;  /* Reduced margin-bottom */
-    margin-right: 0.85vw;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refreshpl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleGallery.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav-container">
+                <div><a href="index.html">HOME</a></div>
+                <div><a href="#gallery">GALERIA</a></div>
+                <div><a href="#contact">KONTAKT</a></div>
+            </div>
+        </nav> 
+    </div>
 
 
 
-.form-container form {
-    display: flex;
-    flex-direction: column;
-}
-.form-container div {
-    align-items: center;
-}
+    <section id="gallery" class="gallery-container">
+        <div class="gallery-item"><img src="Pictures/zdjGal1.jpg" alt="Opis zdjęcia 1"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal2.jpg" alt="Opis zdjęcia 2"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal3.jpg" alt="Opis zdjęcia 3"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal4.jpg" alt="Opis zdjęcia 4"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal5.jpg" alt="Opis zdjęcia 5"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal6.jpg" alt="Opis zdjęcia 6"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal7.jpg" alt="Opis zdjęcia 7"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal8.jpg" alt="Opis zdjęcia 8"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal9.jpg" alt="Opis zdjęcia 9"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal10.jpg" alt="Opis zdjęcia 10"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal11.jpg" alt="Opis zdjęcia 11"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal12.jpg" alt="Opis zdjęcia 12"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal13.jpg" alt="Opis zdjęcia 13"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal14.jpg" alt="Opis zdjęcia 14"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal15.jpg" alt="Opis zdjęcia 15"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal16.jpg" alt="Opis zdjęcia 16"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal17.jpg" alt="Opis zdjęcia 17"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal18.jpg" alt="Opis zdjęcia 18"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal19.jpg" alt="Opis zdjęcia 19"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal20.jpg" alt="Opis zdjęcia 20"></div>
+        <div class="gallery-item"><img src="Pictures/zdjGal21.jpg" alt="Opis zdjęcia 20"></div>
+    </section>
 
-.form-container input,
-.form-container textarea,
-.form-container button {
-    font-family: "Noto Serif", serif;
-    align-items: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 2%;
-    padding: 1%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: none;
-}
+    <div class="brown-rectangleContact" id="contact">
 
+        <div class="theme">
+            <h2 class="contactH2">KONTAKT</h2>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-ph">
+                <svg xmlns="http://www.w3.org/2000/svg" class = "iconPh" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                <p>Infolinia</p>
+                <p>+48 123 456 789</p>
+            </div>
+            <div class="contact-info-fb">
+                <svg xmlns="http://www.w3.org/2000/svg" class = "iconFb" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                <p>Facebook</p>
+                <p>Link</p>
+            </div>
+            <div class="contact-info-ml">
+                <svg xmlns="http://www.w3.org/2000/svg" class = "iconMl" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                </svg>
+                <p>Email</p>
+                <p>xxx@xxx.com</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Imię i nazwisko">
+                <input type="email" name="email" placeholder="Adres email">
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+                <button type="submit" name="send">Wyślij</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Refreshpl. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
 
-.form-container textarea {
-    font-family: "Noto Serif", serif;
-    padding-bottom: 10%; 
-}
-.form-container button {
-    font-family: "Noto Serif", serif;
-    padding: 1% 2%;
-    background-color: #BA9573;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.footer {
-    background-color: #806348; 
-    color: white; 
-    text-align: center; 
-    padding: 20px 0; 
-    bottom: 0; 
-    width: 100%; 
-}
-
-.footer p {
-    font-family: "Noto Serif", serif;
-    font-size: 1vw;
-}
+</body>
