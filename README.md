@@ -1,7 +1,7 @@
-#Project Description
+# Project Description
 This project is a web "business card" for a wrapping company, showcasing their services and contact information. The website is designed to be simple yet informative, providing potential clients with a clear understanding of the company's offerings.
 
-###Technologies Used
+### Technologies Used
 HTML: For the structure of the web pages.
 CSS: For styling the website and making it visually appealing.
 PHP: For server-side processing, including:
@@ -9,7 +9,7 @@ PHP: For server-side processing, including:
 - Handling form validations on the server side.
 
 
-###How to Use
+### How to Use
 Clone the repository to your local machine.
 Ensure you have a local server environment set up (such as XAMPP or WAMP) to run PHP.
 Place the project files in the server's root directory.
