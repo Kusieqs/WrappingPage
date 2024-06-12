@@ -59,7 +59,8 @@ html{
 
 .icons-container {
     position: relative; 
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -82,32 +83,36 @@ html{
     word-wrap: break-word; 
 }
 
+
+
+
+ 
 .big-image {
     position: absolute;
-    top: 4.5%;
-    right: 1%;
-    width: 40vw; 
-    max-width: 35%;
-    margin-right: 15%;
+    width: 47vw; 
     z-index: -1;
+    margin-top: 9.5%;
+    right: 0;
 }
 
 .big-image img {
-    width: 80%; 
+    width: 66.5%; 
     height: auto;
     border-radius: 10px;
-    margin-left: 10%;
+    margin-left: 25%;
 }
+
+
 
 .offer-description {
     font-family: "Noto Serif", serif;
-    scroll-margin-top: 5vw;
+    scroll-margin-top: 2vw;
     position: relative;
     color: #000; 
     font-size: 2vw; 
     margin-top: 5%; 
-    margin-bottom: 2%;
-    margin-left: 20%; 
+    margin-bottom: 1%;
+    margin-left: 0.5%;
 }
 
 
@@ -121,32 +126,30 @@ html{
     background-color: #D0C1A9;
     min-height: 100%;
     padding: 20px;
-    height: 45vw;
+    height: 55vw;
     display: flex;
 }
-
-
-
 .left-content {
+    position: absolute;
+    width: 47vw; 
     flex: 1;
-    margin-left: 14%;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 6.5%;
 }
 
 .left-content img {
-    width: auto; 
-    height: 87%;
+    width: 66.5%; 
+    height: auto;
     border-radius: 10px;
 }
 
 
-
-
+/* TUTAJ ZMIANA */
 .right-content {
+    position: absolute;
     flex: 2;
     padding: 0 2%;
-    margin-left: 10%;
-    margin-right: 15%;
+    margin-top: 6.5%;
 }
 
 .right-content p {
@@ -161,7 +164,7 @@ html{
     font-family: "Noto Serif", serif;
     font-size: 3vw;
     color: #fff;
-    margin-left: 7%;
+    margin-left: 30%;
 }
 
 
