@@ -120,7 +120,6 @@ html{
 
 
 .brown-rectangle {
-    scroll-margin-top: 3vw;
     margin-top: 5%;
     margin-bottom: 3%;
     background-color: #D0C1A9;
@@ -146,10 +145,12 @@ html{
 
 /* TUTAJ ZMIANA */
 .right-content {
+    scroll-margin-top: 2vw;
     position: absolute;
     flex: 2;
     padding: 0 2%;
-    margin-top: 6.5%;
+    margin-top: 3%;
+    margin-left: 50%;
 }
 
 .right-content p {
@@ -158,20 +159,19 @@ html{
     font-size: 1.1vw;
     line-height: 1.7;
     word-wrap: break-word;
-    max-width: 100%;
+    max-width: 70%;
 }
 .right-content h2{
     font-family: "Noto Serif", serif;
     font-size: 3vw;
     color: #fff;
-    margin-left: 30%;
 }
 
 
 
 
 .pricing {
-    scroll-margin-top: 7vw;
+    scroll-margin-top: 5vw;
     margin-top: 5%;
     text-align: center;
     margin-bottom: 7%;
@@ -192,6 +192,10 @@ html{
     word-wrap: break-word; 
     margin-right: 10%;
     margin-left: 10%;
+}
+
+.setting-pircing{
+    margin-top: 3%;
 }
 
 .pricing-plans {
