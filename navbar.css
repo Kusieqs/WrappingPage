@@ -36,6 +36,7 @@ nav {
     margin-left: 5vw; 
 }
 
+
 .nav-right{
     margin-right: 5vw;
 }
@@ -75,7 +76,7 @@ nav {
     }
 
     .nav-container {
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
         margin: 0 auto;
     }
@@ -91,10 +92,10 @@ nav {
 
     .nav-left div a {
         padding: 0.3vw 0.6vw;
-        width: 10vw;
-        line-height: 2.5vw;
-        min-height: 2.0vw;
-        font-size: min(1.5vw);
+        width: 15vw;
+        line-height: 3.7vw;
+        min-height: 3.7vw;
+        font-size: min(4.3vw);
         margin-left: 1.6vw;
         margin-right: 1.6vw;
     }
