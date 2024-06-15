@@ -1,0 +1,118 @@
+
+@font-face{
+    font-family: 'CustomFont';
+    src: url(NT_Marley_Soft_Light.otf);
+}
+
+.brown-rectangleContact {
+    background-color: #D0C1A9;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    scroll-margin-top: 1.5vw;
+}
+
+.brown-rectangleContact h2 {
+    font-family: 'CustomFont';
+    text-align: center;
+    font-size: 3vw;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px; 
+    margin-bottom: 4vh;
+}
+
+.contact-info div {
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-info p {
+    font-family: 'CustomFont';
+    color: white;
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-left: 3vw; 
+    padding-right: 4vw; 
+}
+
+.contact-info .iconPh {
+    width: 4vw;  
+    height: auto;
+    margin-bottom: 1.5vh;  
+    margin-right: 1vw;
+}
+.contact-info .iconMl {
+    width: 4vw;  
+    height: auto;
+    margin-bottom: 1.5vh;  
+    margin-right: 1.2vw;
+}
+.contact-info .iconFb {
+    width: 4vw;  
+    height: auto;
+    margin-bottom: 1.5vh;  
+    margin-right: 0.85vw;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container div {
+    align-items: center;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    font-family: 'CustomFont';
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-container textarea {
+    padding-bottom: 10%; 
+}
+.form-container button {
+    font-family: 'CustomFont';
+    padding: 1% 2%;
+    background-color: #BA9573;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer {
+    background-color: #806348; 
+    color: white;  
+    text-align: center; 
+    padding: 20px 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footer p {
+    font-family: 'CustomFont';
+    font-size: 1vw;
+}
